@@ -1,0 +1,28 @@
+/* body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+} */
+
+ p {
+     margin-bottom: 1.2em;
+ }
+
+
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+blockquote {
+    margin: 20px 0;
+}
+
+blockquote footer {
+    padding-top: 8px;
+}
+
+#map {
+    height: 600px;
+}
