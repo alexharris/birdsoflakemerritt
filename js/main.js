@@ -18,6 +18,10 @@
       .then(result => showBirds(result))
       .catch(error => console.log('error', error));
 
+    fetch("https://api.weather.gov/gridpoints/MTR/89,104/forecast")
+    .then(response => response.json())
+    .then(result => showWeather(result.properties.periods[0]))
+
      
  })();
 
@@ -41,8 +45,19 @@ function showBirds(birds) {
         newCell2.appendChild(newText2);
     }
       
+ }
+
+ function showWeather(forecast) {
+     console.log(forecast)
+     document.getElementById('forecast-name').textContent = forecast.name
+     document.getElementById('short-forecast').textContent = forecast.shortForecast
+     document.getElementById('temperature').textContent = forecast.temperature
+     document.getElementById('wind-speed').textContent = forecast.windSpeed
+     document.getElementById('weather-icon').src = forecast.icon
 
  }
 
 //L268122
 //  l74e03ri8jei
+
+// https://api.weather.gov/gridpoints/MTR/89,104/forecast
