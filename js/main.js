@@ -20,7 +20,20 @@
 
     fetch("https://api.weather.gov/gridpoints/MTR/89,104/forecast")
     .then(response => response.json())
-    .then(result => showWeather(result.properties.periods[0]))
+    .then(result => {
+      showWeather(result.properties.periods[0])
+      showWeather2(result.properties.periods[2])
+    })
+
+
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+
+    document.getElementById('today').textContent = today
 
      
  })();
@@ -43,6 +56,10 @@ function showBirds(birds) {
         var newCell2 = newRow.insertCell();
         var newText2 = document.createTextNode(birds[i].howMany);
         newCell2.appendChild(newText2);
+
+        if(birds[i].comName == 'American Coot') {
+          document.getElementById('coot-number').textContent = birds[i].howMany
+        }
     }
       
  }
@@ -56,6 +73,15 @@ function showBirds(birds) {
      document.getElementById('weather-icon').src = forecast.icon
 
  }
+
+ function showWeather2(forecast) {
+  document.getElementById('forecast-name2').textContent = forecast.name
+  document.getElementById('short-forecast2').textContent = forecast.shortForecast
+  document.getElementById('temperature2').textContent = forecast.temperature
+  document.getElementById('wind-speed2').textContent = forecast.windSpeed
+  document.getElementById('weather-icon2').src = forecast.icon
+
+}
 
 //L268122
 //  l74e03ri8jei

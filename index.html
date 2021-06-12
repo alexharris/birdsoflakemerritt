@@ -25,19 +25,20 @@
         <meta name="twitter:image" content="" />  <!-- An image representing the content of the page -->     
         <meta name="twitter:image:alt" content="" /> <!-- Descriptive text of the image for visually impaired --> 
     </head>
-    <body class="container mx-auto max-w-6xl py-8 px-8 bg-yellow-50">
-        <section id="intro" >
-            <div class="text-center pb-16">
-                <figure class="pb-12">
+    <body class="flex flex-col lg:flex-row">
+        <div>
+        <section id="intro" class="m-8">
+            <div class="text-center pb-24">
+                <figure class="pb-24">
                     <img class="w-full" src="images/duck-sign.jpg"
                          alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
-                    <figcaption class="text-xs text-right pt-2">A photo of ducks at Lake Merritt in 1920, by William L. Finley.</figcaption>
+                    <figcaption class="text-xs pt-2 w-48 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
                 </figure>                   
-                <p class="text-sm pb-4">Welcome to the homepage of..</p>
-                <h1 class="font-serif text-6xl pb-8 font-bold">Birds of Lake Merritt</h1>
+                <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
+                <h1 class="font-serif text-7xl pb-8 font-bold">Birds of Lake Merritt</h1>
                 <p class="text-lg italic">a book about a lake and the birds at the lake</p>
             </div>
-            <div class="flex flex-col sm:flex-row sm:space-x-16">
+            <div class="flex flex-col sm:flex-row sm:space-x-8">
                 <div class="sm:w-1/2">
                     <img src="images/cover.jpg" class="shadow-lg" />
                 </div>
@@ -49,10 +50,10 @@
                     </p>
                     <p><i>Birds of Lake Merritt</i> is a book that tells the history of this lake, the relationship between the birds and humans that share it, and introduces us to fifteen species that can be regularly seen on or around it's waters.</p>
 
-                    <div class="border-double border-4 border-black rounded shadow-lg mb-8">
-                        <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center">About the book</h3>
+          
+                        <h3 class="font-bold uppercase">About the book</h3>
                         <div id="weather" class="p-4">
-                            <ul class="list-disc list-inside">
+                            <ul class="list-disc ">
                                 <li>Hardcover</li>
                                 <li>5.5 x 8.5 inches</li>
                                 <li>80 pages</li>
@@ -61,7 +62,7 @@
                                 <li>$25 price</li>
                             </ul>
                         </div>
-                    </div>                    
+                                 
                     <p>It can be purchased from:<br />
                         <a class="text-blue-800 underline hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday Books</a><br />
                         <a class="text-blue-800 underline hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480?aid=4148&listref=forthcoming-f8659329-112c-40c2-b1e7-744c1eeff211">Bookshop.org</a>
@@ -70,16 +71,9 @@
                 
             </div>
         </section>
-        <section class="border-black border-t border-dashed pt-8 mt-8">
+        <section class="border-black border-t border-dashed pt-8 m-8">
             <h2 class="self-center font-serif pb-8 text-2xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
-            <div class="flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0">
-                <div class="md:w-1/2 md:order-2">
-                    <figure>
-                        <img src="images/greater-scaup.png"
-                             alt="Painting of a male and female Greater Scaup">
-                        <figcaption class="text-sm text-center pt-4">Some ducks.</figcaption>
-                    </figure>                                            
-                </div>                
+            <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">               
                 <div class="md:w-1/2">
                     <blockquote>
                         “I’ve always known Lake Merritt as a great place to look for birds, not knowing that it was originally designated as a bird sanctuary over 150 years ago—the first wildlife refuge in the country! This charming book is the perfect introduction to the lake and its birds, and it’s sure to give you a new appreciation of both.”
@@ -94,7 +88,13 @@
                         <footer><strong>JOHN MUIR LAWS</strong>, author of <i>The Laws Guide to Drawing Birds</i></footer>
                     </blockquote>   
                 </div>
-
+                <div class="md:w-1/2">
+                    <figure>
+                        <img src="images/greater-scaup.png"
+                             alt="Painting of a male and female Greater Scaup">
+                        <figcaption class="text-sm text-center pt-4">Male and female Greater Scaup.</figcaption>
+                    </figure>                                            
+                </div> 
             </div>                     
         </section>          
         <!-- <section id="order" class="flex flex-col border-black border-t border-dashed pt-8 mt-8">
@@ -102,7 +102,7 @@
             <div class="w-1/2">This book is available:</div>
             <div class="bg-yellow-100 rounded w-1/2 text-center p-2 text-xl">Order from Bookshop</div>
         </section> -->
-        <section id="visit-section" class="border-black border-t border-dashed pt-8 mt-8 flex flex-col"> 
+        <section id="visit-section" class="border-black border-t border-dashed pt-8 m-8 flex flex-col"> 
              
             <h2 class="font-serif pb-6 text-2xl self-center">Visiting the lake</h2>
             <p class="text-center pb-8">Reading about the lake is great, but visiting is even better.</p>
@@ -124,14 +124,28 @@
             </div>
 
         </section>
-        <section id="ebird-section" class="border-black border-t border-dashed pt-8 mt-8 flex flex-col md:flex-row space-x-8">       
-                    <div class="md:w-1/2 ">
-                        <div class="border-double border-4 border-black rounded shadow-lg">
-                            <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
-                            <div id="weather" class="flex flex-row space-x-4 p-4">
-                                <div>
-                                    <img id="weather-icon" />
-
+    </div>
+        <section id="ebird-section" class="p-8 mt-8 flex flex-col bg-yellow-100 lg:p-4 lg:mt-0">       
+            <h2 class="font-serif pb-6 text-2xl self-center">Recently at Lake Merritt</h2>
+            <p class="text-center pb-8 lg:pb-0">Here is what has been going on at Lake Merrit recently, bird and weather-wise.</p>    
+            <div class="flex flex-col sm:flex-row lg:flex-col md:space-x-8 space-y-12 md:space-y-0 lg:space-y-8 lg:space-x-0">     
+                <div class="md:w-3/5 lg:w-full lg:order-2">
+                    <p class="pb-6">Today is <span id="today"></span>. Here are the birds that the intrepid citizen scientist's at <a href="https://ebird.org">eBird</a> have observed at the lake and surrounding parklands* (or as they call it at eBird: <a href="https://ebird.org/hotspot/L268122">L268122</a>) in the last 30 days:</p>                
+                    <table id="ebird" class="w-full mb-8 border-double border-4 border-black shadow-lg rounded font-sm">
+                        <thead>
+                            <th class="border border-black text-left p-2">Bird</th>
+                            <th class="border border-black text-left p-2">Number Observed</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p class="text-sm">* Birds in the parklands are not covered by <em>Birds of Lake Merritt</em>. Nary a thought even given to them.</p>
+                </div>                    
+                <div class="md:w-2/5 lg:w-full lg:order-1">
+                    <div class="border-double border-4 border-black rounded shadow-lg mb-6">
+                        <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
+                        <div id="weather" class="flex flex-row space-x-4 p-4">
+                            <div>
+                                <img id="weather-icon" />
                                 </div>
                                 <ul class="mt-0 text-lg">
                                     <li id="short-forecast"></li>
@@ -140,18 +154,27 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="border-double border-4 border-black rounded shadow-lg mb-6">
+                            <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center"><span id="forecast-name2"></span>'s Forecast</h3>
+                            <div id="weather2" class="flex flex-row space-x-4 p-4">
+                                <div>
+                                    <img id="weather-icon2" />
+                                </div>
+                                <ul class="mt-0 text-lg">
+                                    <li id="short-forecast2"></li>
+                                    <li>Temperature: <span id="temperature2"></span> F</li>
+                                    <li>Wind <span id="wind-speed2"></span></li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <figure class="border-double border-4 border-black rounded shadow-lg">
+                            <img src="images/coot.png"
+                                 alt="Painting of an American Coot">
+                            <figcaption class="text-sm text-center pt-4">This is an American Coot. American Coot's have been recorded at the lake <span id="coot-number"></span> times in the last 30 days.</figcaption>
+                        </figure>                      
                     </div>
-                    <div class="md:w-1/2">
-                    <p class="pb-6">Here are the birds that the intrepid citizen scientist's at <a href="https://ebird.org">eBird</a> have observed at the lake and surrounding parklands* (or as they call it at eBird: <a href="https://ebird.org/hotspot/L268122">L268122</a>) in the last 30 days:</p>                
-                    <table id="ebird" class="w-full mb-8">
-                        <thead>
-                            <th class="border border-black text-left p-2">Bird</th>
-                            <th class="border border-black text-left p-2">Number Observed</th>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                    <p class="text-sm">* Birds in the parklands are not covered by <em>Birds of Lake Merritt</em>. Nary a thought even given to them.</p>
-                    </div
+                </div>
+            </div>
  
         </section>        
  

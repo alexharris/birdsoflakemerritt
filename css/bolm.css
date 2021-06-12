@@ -5,6 +5,10 @@
     padding: 10px;
 } */
 
+body {
+    background-color: #fdfdf8;
+}
+
  p {
      margin-bottom: 1.2em;
  }
