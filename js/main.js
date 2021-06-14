@@ -38,24 +38,45 @@
      
  })();
 
+birdArray = [
+  'cangoo',
+  'bcnher',
+  'doccor',
+  'snoegr',
+  'amwpel',
+  'rudduc',
+  'grnher',
+  'y00475',
+  'grbher3',
+  'glwgul',
+  'gresca',
+  'comgol',
+  'belkin1',
+  'wesgre',
+  'canvas'
+]
+
 function showBirds(birds) {
     console.log(birds)
     var tbodyRef = document.getElementById('ebird').getElementsByTagName('tbody')[0];
     for (let i = 0; i < birds.length; i++) {
-        
-        // Insert a row at the end of table
-        var newRow = tbodyRef.insertRow();
-        
-        // Insert a cell at the end of the row
-        var newCell = newRow.insertCell();
-        
-        // Append a text node to the cell
-        var newText = document.createTextNode(birds[i].comName);
-        newCell.appendChild(newText);
-        
-        var newCell2 = newRow.insertCell();
-        var newText2 = document.createTextNode(birds[i].howMany);
-        newCell2.appendChild(newText2);
+      console.log(birds[i].sciName)
+        if(birdArray.includes(birds[i].speciesCode) == true) {
+          // Insert a row at the end of table
+          var newRow = tbodyRef.insertRow();
+          
+          // Insert a cell at the end of the row
+          var newCell = newRow.insertCell();
+          
+          // Append a text node to the cell
+          var newText = document.createTextNode(birds[i].comName);
+          newCell.appendChild(newText);
+          
+          var newCell2 = newRow.insertCell();
+          var newText2 = document.createTextNode(birds[i].howMany);
+          newCell2.appendChild(newText2);
+
+        }
 
         if(birds[i].comName == 'American Coot') {
           document.getElementById('coot-number').textContent = birds[i].howMany
@@ -83,7 +104,4 @@ function showBirds(birds) {
 
 }
 
-//L268122
-//  l74e03ri8jei
 
-// https://api.weather.gov/gridpoints/MTR/89,104/forecast

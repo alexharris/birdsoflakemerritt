@@ -15,8 +15,17 @@ body {
 
 
 td {
-    border: 1px solid black;
-    padding: 4px;
+    /* border: 1px solid black; */
+    padding:  0 16px;
+}
+
+td:last-of-type {
+    
+ text-align: right;
+}
+
+th {
+    padding: 0;
 }
 
 blockquote {
