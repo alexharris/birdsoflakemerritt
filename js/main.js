@@ -33,7 +33,7 @@
 
     today = mm + '/' + dd + '/' + yyyy;
 
-    document.getElementById('today').textContent = today
+    // document.getElementById('today').textContent = today
 
      
  })();
@@ -80,11 +80,11 @@ function showBirds(birds) {
 
         document.getElementById('total-birds').textContent = birds.length
 
-        if(birds[i].comName == 'American Coot') {
-          document.getElementById('coot-number').textContent = birds[i].howMany
-        } else {
-          document.getElementById('coot-number').textContent = '0'
-        }
+        // if(birds[i].comName == 'American Coot') {
+        //   document.getElementById('coot-number').textContent = birds[i].howMany
+        // } else {
+        //   document.getElementById('coot-number').textContent = '0'
+        // }
     }
       
  }
