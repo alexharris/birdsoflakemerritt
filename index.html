@@ -25,7 +25,7 @@
         <meta name="twitter:image" content="" />  <!-- An image representing the content of the page -->     
         <meta name="twitter:image:alt" content="" /> <!-- Descriptive text of the image for visually impaired --> 
     </head>
-    <body class="flex flex-col xl:flex-row">
+    <body class="flex flex-col items-center">
         <div class="xl:w-2/3">
             <section id="intro" class="m-8 ">
                 <div class="text-center pb-8">
@@ -46,10 +46,7 @@
                     
                     <div class="sm:w-1/2">
                         <h2 class="font-serif text-2xl pb-6">About the Book</h2>
-                        <p>
-                            Lake Merritt is home to the nation's first official wildlife refuge, founded in 1869 on the edges of the then-small town of Oakland, California. In the intervening years, as Oakland has grown to fully encompass the water's edge, Lake Merritt has provided respite for birds and humans amongst it's waters and grassy circumfrence.
-                        </p>
-                        <p><i>Birds of Lake Merritt</i> is a book that tells the history of this lake, the relationship between the birds and humans that share it, and introduces us to fifteen species that can be regularly seen on or around it's waters.</p>
+                        <p><i>Birds of Lake Merritt</i> tells the history of Lake Merritt, the first official wildlife refuge in the United States, and introduces us to fifteen of the many waterbird species that can be found their.</p>
 
                         <ul class="list-disc px-4 pb-4">
                             <li>Hardcover</li>
@@ -85,6 +82,11 @@
                             “With brush and words, Alex Harris brings out the local color of beloved birds in the heart of Oakland. Through each bird’s backstory, we see that Lake Merritt is a meeting spot for local avian residents and international travelers alike. Alex’s bird portraits capture the life, whimsy, and identification details of fifteen common species, making this a great introduction to birds for adults and youth.” 
                             <footer><strong>JOHN MUIR LAWS</strong>, author of <i>The Laws Guide to Drawing Birds</i></footer>
                         </blockquote>   
+                        <blockquote>
+                            "Just like the birds that flock to Lake Merritt every winter, I find myself returning to this book again and again. Every time I absorb these pages, I’m instantly transported to my favorite place in Oakland."
+                            <footer><Strong>LIAM O'DONAGHUE</Strong>, host of East Bay Yesterday</footer>
+                        </blockquote>
+                                               
                     </div>
                     <div class="md:w-1/2">
                         <figure>
@@ -110,8 +112,8 @@
                         <img src="images/MAP.png" />
                     </div>
                     <div class="w-full md:w-2/5">
-                        <p>The <a href="https://www.openstreetmap.org/way/37013177">rotary nature center</a> is a great place to start a visit. The pond and nearby bird islands often have many types of birds visible, no binoculars needed. Walk in either direction and see what other kinds of birds you can spot.</em></p>
-                        <p>Additionally, the Golden Gate Audubon Society hosts regular bird watching field trips at the lake, in case you want something with a little more structure.</p>
+                        <p>Perhaps the best place to start is at the <a href="https://www.openstreetmap.org/way/37013177">rotary nature center</a>. Even if the center itself is not open, the pond and nearby bird islands often have many types of birds visible, no binoculars needed. Walk in either direction and see what other kinds of birds you can spot.</em></p>
+                        <p>Additionally, the <a href="https://goldengateaudubon.org">Golden Gate Audubon Society</a> hosts regular bird watching field trips at the lake, in case you want something with a little more structure.</p>
                         <figure>
                             <img class="py-6" src="images/dome.png" alt="a drawing of the geodesic dome at Lake Merritt" />
                             <figcaption class="text-xs text-center pt-2"> Speaking of structure, the lake is also home to the <A href="https://cfairyland.blogspot.com/2016/11/the-mystery-of-lakeside-dome.html">first permanent geodesic dome constructed on the west coast</A>, still in place near the nature center. </figcaption>
@@ -133,24 +135,24 @@
                     </div>
                     <div class="w-full md:w-2/3">
                         <h3 class="font-bold uppercase">About the author</h3>
-<p>
-    Alex Harris, born and raised in Berkeley, California, is an artist interested in using art and technology to look at how humans interface with the natural world. He has a BA in environmental studies from the University of California, Santa Cruz, and previously worked as the web editor and electronic communications manager at the Berkeley Art Museum and Pacific Film Archive. He lives and works in Oakland, California.
-</p>
+                            <p>
+                                Alex Harris, born and raised in Berkeley, California, is an artist interested in using art and technology to look at how humans interface with the natural world. He has a BA in environmental studies from the University of California, Santa Cruz, and previously worked as the web editor and electronic communications manager at the Berkeley Art Museum and Pacific Film Archive. He lives and works in Oakland, California.
+                            </p>
                         
                     </div>
                 </div>
 
             </section>            
         </div>
-        <section id="ebird-section" class="p-8 mt-8 flex flex-col bg-yellow-50 lg:p-4 lg:mt-0 xl:w-1/3 relative">       
+        <section id="ebird-section" class="p-8 mt-8 flex flex-col bg-yellow-50 lg:p-4 lg:mt-0 relative w-full items-center">       
             <h2 class="font-serif pb-2 text-xl"> @ The Lake <span id="today"></span></h2>
             
-            <div class="flex flex-col md:flex-row xl:flex-col md:space-x-8 space-y-2 md:space-y-0 xl:space-y-4 xl:space-x-0">     
-                <div class="md:w-3/5 lg:w-full xl:order-2">
+            <div class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 container">     
+                <div class="md:w-3/5 ">
                     <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                         <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center">Recent Observations</h3>
 
-                        <p class="mx-4 pt-4 pb-4 border-b border-black border-dashed">Observations of the birds in <em>Birds of Lake Merritt</em> at Lake Merritt in the last 30 days, according to eBird.</p>                
+                        <p class="mx-4 pt-4 pb-4 border-b border-black border-dashed">Observations of the birds in <em>Birds of Lake Merritt</em> at Lake Merritt in the last 30 days, according to <a href="https://ebird.org">eBird</a>.</p>                
                         <table id="ebird" class="w-full mb-6">
                             <!-- <thead>
                                 <th class="text-left p-2">Bird</th>
@@ -158,10 +160,10 @@
                             </thead> -->
                             <tbody></tbody>
                         </table>
-                        <p class="mx-4 pt-4 border-t border-black border-dashed ">Overall, XX birds have been spotted at and around Lake Merritt. See the full list at eBird. </p>
+                        <p class="mx-4 pt-4 border-t border-black border-dashed ">Overall, <span id="total-birds"></span> different kinds of bird have been spotted at and around Lake Merritt. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
                     </div>
                 </div>                    
-                <div class="md:w-2/5 lg:w-full xl:order-1">
+                <div class="md:w-2/5">
                     <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                         <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
                         <div id="weather" class="flex flex-row space-x-4 p-4">

@@ -6,11 +6,16 @@
 } */
 
 body {
-    background-color: #fdfdf8;
+    /* background-color: #fdfdf8; */
 }
 
  p {
      margin-bottom: 1.2em;
+ }
+
+ a {
+     color: blue;
+     text-decoration: underline;
  }
 
 
