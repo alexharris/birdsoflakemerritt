@@ -26,21 +26,32 @@
         <meta name="twitter:image:alt" content="" /> <!-- Descriptive text of the image for visually impaired --> 
     </head>
     <body class="flex flex-col items-center text-lg">
-        <div class="xl:w-2/3">
+
+            
+            
+
+        <div class="w-full xl:w-3/4">
             <section id="intro" class="m-8 ">
-                <div class="text-center pb-8">
-                    <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
-                    <h1 class="font-serif text-7xl pt-8 font-bold">Birds of Lake Merritt</h1>
-                    <p class="text-2xl pt-8 italic">a book about a lake and the birds at the lake</p>                    
-                    <figure class="pt-16 pb-4">
+                <div class="text-center pb-8 min-h-screen h-auto md:h-full flex flex-col items-center">
+                    <h1 class="font-serif text-7xl pt-32 font-bold leading-normal">Birds of Lake Merritt</h1>
+                    <p class="text-2xl pt-24 pb-12 md:pb-0 font-light max-w-xl leading-10">A book about the birds, people, and history of the lake in the center of Oakland, California</p>                    
+
+                    <figure class="pt-36 pb-4 hidden md:block">
                         <img class="w-full" src="images/duck-sign.jpg"
                             alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
                         <figcaption class="text-xs pt-2 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
-                    </figure>                   
+                    </figure>                         
+                    <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
+                    <div id="current-temp-star" class="h-56 w-56 grid place-content-center text-center md:fixed md:right-4 md:top-4 ">
+                        Today at the lake
+                        <div id="current-temp" class="text-5xl pt-1"></div>
+                        <div id="short-forecast" class="text-xs px-6 pt-2">hello</div>
+            
+                    </div>              
 
                 </div>
-                <div class="border-t border-dashed pt-8">
-                    <h2 class="self-center font-serif pb-12 text-2xl text-center">About the Book</h2>
+                <div class="border-t border-dashed pt-16">
+                    <h2 class="self-center font-serif pb-16 text-5xl text-center">About the Book</h2>
                     <div class="flex flex-col sm:flex-row sm:space-x-12">
                         <div class="sm:w-1/2 pb-12">
                             <img src="images/cover.jpg" class="shadow-lg" />
@@ -69,35 +80,37 @@
 
                 </div>
             </section>
-            <section class=" border-t border-dashed pt-12 m-16">
-                <h2 class="self-center font-serif pb-8 text-2xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
-                <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">               
-                    <div class="md:w-1/2">
+            <section class=" border-t border-dashed pt-16 my-16 mx-8">
+                <h2 class="self-center font-serif pb-16 text-5xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
+                <div class="grid grid-cols-2 gap-16">               
+   
                         <blockquote>
                             “I’ve always known Lake Merritt as a great place to look for birds, not knowing that it was originally designated as a bird sanctuary over 150 years ago—the first wildlife refuge in the country! This charming book is the perfect introduction to the lake and its birds, and it’s sure to give you a new appreciation of both.”
                             <footer><strong>DAVID ALLEN SIBLEY</strong>, author of <i>What It’s Like to Be a Bird</i></footer>
                         </blockquote>
                         <blockquote>
-                            “Beautifully illustrated and written, this is a must-have for anyone who wants to better understand and appreciate our neighbors.”
-                            <footer><strong>JENNY ODELL</strong>, author of <i>How to Do Nothing</i></footer>
-                        </blockquote>
-                        <blockquote>
                             “With brush and words, Alex Harris brings out the local color of beloved birds in the heart of Oakland. Through each bird’s backstory, we see that Lake Merritt is a meeting spot for local avian residents and international travelers alike. Alex’s bird portraits capture the life, whimsy, and identification details of fifteen common species, making this a great introduction to birds for adults and youth.” 
                             <footer><strong>JOHN MUIR LAWS</strong>, author of <i>The Laws Guide to Drawing Birds</i></footer>
-                        </blockquote>   
+                        </blockquote>                           
                         <blockquote>
                             "Just like the birds that flock to Lake Merritt every winter, I find myself returning to this book again and again. Every time I absorb these pages, I’m instantly transported to my favorite place in Oakland."
                             <footer><Strong>LIAM O'DONAGHUE</Strong>, host of East Bay Yesterday</footer>
+                        </blockquote>                      
+                        <blockquote>
+                            “Beautifully illustrated and written, this is a must-have for anyone who wants to better understand and appreciate our neighbors.”
+                            <footer><strong>JENNY ODELL</strong>, author of <i>How to Do Nothing</i></footer>
                         </blockquote>
-                                               
-                    </div>
-                    <div class="md:w-1/2">
-                        <figure>
+                          
+
+
+                     
+                    
+                        <!-- <figure>
                             <img src="images/greater-scaup.png"
                                 alt="Painting of a male and female Greater Scaup">
                             <figcaption class="text-sm text-center pt-4">Male and female Greater Scaup.</figcaption>
-                        </figure>                                            
-                    </div> 
+                        </figure>                                             -->
+
                 </div>                     
             </section>          
             <!-- <section id="order" class="flex flex-col border-black border-t border-dashed pt-8 mt-8">
@@ -105,10 +118,10 @@
                 <div class="w-1/2">This book is available:</div>
                 <div class="bg-yellow-100 rounded w-1/2 text-center p-2 text-xl">Order from Bookshop</div>
             </section> -->
-            <section id="visit-section" class="border-black border-t border-dashed pt-8 m-8 flex flex-col"> 
+            <section id="visit-section" class="border-black border-t border-dashed pt-16 m-8 flex flex-col"> 
                 
-                <h2 class="font-serif pb-6 text-2xl self-center">Visiting the lake</h2>
-                <p class="text-center pb-8">Reading about the lake is great, but visiting is even better.</p>
+                <h2 class="font-serif pb-16 text-5xl self-center">Visiting the lake</h2>
+                <p class="text-center pb-8">Reading about the lake is great, but visiting is even better</p>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
                     <div class="w-full md:w-3/5 flex flex-col">
                         
@@ -127,7 +140,7 @@
                 </div>
                 <div class="w-full flex flex-col items-center">
                     
-                    <p class="pt-16 md:pt-24 text-center max-w-lg">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
+                    <p class="pt-16 mt-16 text-center max-w-lg border-t border-dotted border-gray-400">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
 
                     <div class="border-double border-4 border-black rounded shadow-lg mt-8 max-w-sm ">
                         <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center">Recent Observations</h3>
@@ -139,9 +152,11 @@
                             </thead> -->
                             <tbody></tbody>
                         </table>
-                        <p class="mx-4 pt-4 border-t border-black border-dashed ">Overall, <span id="total-birds"></span> different kinds of bird have been spotted at and around Lake Merritt. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
                     </div>   
-                    <p class="pt-16 pb-12 text-center max-w-sm">and here is the weather, in case you are weighing a visit:</p>
+                    <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted at and around Lake Merritt. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
+
+                    <p class="mx-4 pt-8 mt-8 pb-12 max-w-lg border-t border-dotted border-gray-400">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>
+
                     <div class="flex flex-col md:flex-row md:space-x-8">
                         <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                             <h3 class="text-xl font-serif border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
@@ -150,7 +165,7 @@
                                     <img id="weather-icon" />
                                     </div>
                                     <ul class="mt-0 text-lg">
-                                        <li id="short-forecast"></li>
+                                        <li id="short-forecast1"></li>
                                         <li>Temperature <span id="temperature"></span> F</li>
                                         <li>Wind <span id="wind-speed"></span></li>
                                     </ul>
@@ -175,7 +190,7 @@
             </section>
           
         </div>
-        <section id="ebird-section" class="p-8 mt-8 flex flex-col  lg:p-4 lg:mt-0 relative w-full items-center">       
+        <section id="ebird-section" class="flex flex-col  lg:p-4 lg:mt-0 relative w-full items-center ">       
             <!-- <h2 class="font-serif pb-2 text-xl"> @ The Lake <span id="today"></span></h2>
             
             <div class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 container">     
@@ -186,14 +201,15 @@
                 </div>
             </div> -->
             <p class="pt-16 pb-12 text-center max-w-sm">and here is an American Coot:</p>
-            <figure class="self-center max-w-sm">
+            <figure class="self-center">
 
                 <img src="images/coot.png"
+                class="rounded-full border border-black w-96 h-96 p-4"
                         alt="Painting of an American Coot">
                 <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
             </figure>   
         </section>    
-        <div class="w-2/3 lg:w-2/3 border-t border-dashed border-black m-12">
+        <div class="border-t border-dashed border-black m-8">
             <section id="author-section" class="pt-8 m-8 md:m-0 flex flex-col"> 
                 <h3 class="font-serif pb-6 text-2xl self-center">About the author</h3>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">

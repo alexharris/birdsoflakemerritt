@@ -23,6 +23,10 @@
     .then(result => {
       showWeather(result.properties.periods[0])
       showWeather2(result.properties.periods[2])
+
+      document.getElementById('current-temp').textContent = result.properties.periods[0].temperature + '° ' + result.properties.periods[0].temperatureUnit
+      document.getElementById('short-forecast').textContent = result.properties.periods[0].shortForecast
+
     })
 
 
@@ -60,7 +64,7 @@ function showBirds(birds) {
     console.log(birds)
     var tbodyRef = document.getElementById('ebird').getElementsByTagName('tbody')[0];
     for (let i = 0; i < birds.length; i++) {
-      console.log(birds[i].sciName)
+      // console.log(birds[i].sciName)
         if(birdArray.includes(birds[i].speciesCode) == true) {
           // Insert a row at the end of table
           var newRow = tbodyRef.insertRow();
@@ -92,7 +96,7 @@ function showBirds(birds) {
  function showWeather(forecast) {
      console.log(forecast)
      document.getElementById('forecast-name').textContent = forecast.name
-     document.getElementById('short-forecast').textContent = forecast.shortForecast
+     document.getElementById('short-forecast1').textContent = forecast.shortForecast
      document.getElementById('temperature').textContent = forecast.temperature
      document.getElementById('wind-speed').textContent = forecast.windSpeed
      document.getElementById('weather-icon').src = forecast.icon
