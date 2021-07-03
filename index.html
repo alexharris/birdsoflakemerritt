@@ -25,14 +25,14 @@
         <meta name="twitter:image" content="" />  <!-- An image representing the content of the page -->     
         <meta name="twitter:image:alt" content="" /> <!-- Descriptive text of the image for visually impaired --> 
     </head>
-    <body class="flex flex-col items-center text-lg">
+    <body class="flex flex-col items-center text-lg relative">
 
             
             
 
         <div class="w-full xl:w-3/4">
             <section id="intro" class="m-8 ">
-                <div class="text-center pb-8 min-h-screen h-auto md:h-full flex flex-col items-center">
+                <div class="text-center pb-8 min-h-screen h-auto md:h-full flex flex-col items-center ">
                     <h1 class="font-serif text-7xl pt-32 font-bold leading-normal">Birds of Lake Merritt</h1>
                     <p class="text-2xl pt-24 pb-12 md:pb-0 font-light max-w-xl leading-10">A book about the birds, people, and history of the lake in the center of Oakland, California</p>                    
 
@@ -42,7 +42,7 @@
                         <figcaption class="text-xs pt-2 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
                     </figure>                         
                     <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
-                    <div id="current-temp-star" class="h-56 w-56 grid place-content-center text-center md:fixed md:right-4 md:top-4 ">
+                    <div id="current-temp-star" class="h-56 w-56 grid place-content-center text-center absolute md:right-4 md:top-4 ">
                         Today at the lake
                         <div id="current-temp" class="text-5xl pt-1"></div>
                         <div id="short-forecast" class="text-xs px-6 pt-2">hello</div>
@@ -204,7 +204,7 @@
             <figure class="self-center">
 
                 <img src="images/coot.png"
-                class="rounded-full border border-black w-96 h-96 p-4"
+                class="rounded-full bg-yellow-50 w-96 h-96 p-4"
                         alt="Painting of an American Coot">
                 <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
             </figure>   
