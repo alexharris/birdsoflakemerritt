@@ -77,7 +77,12 @@ function showBirds(birds) {
           newCell.appendChild(newText);
           
           var newCell2 = newRow.insertCell();
-          var newText2 = document.createTextNode(birds[i].howMany);
+          if(birds[i].howMany) {
+            var newText2 = document.createTextNode(birds[i].howMany);
+          } else {
+            var newText2 = document.createTextNode('?');
+          }
+          
           newCell2.appendChild(newText2);
 
         }
