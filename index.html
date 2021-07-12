@@ -8,22 +8,15 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">     
         <link rel="stylesheet" href="css/bolm.css">
         <!-- END CSS -->
-        <title></title> <!-- Page Title: Shows up in browser tabs and search results -->
-        <meta name="description" content=""> <!-- Page Description: Shows up beneath google results, etc -->
+        <title>Birds of Lake Merritt</title> <!-- Page Title: Shows up in browser tabs and search results -->
+        <meta name="description" content="Birds of Lake Merritt is a book about the birds at Lake Merritt, the first official wildlife refuge in the United States."> <!-- Page Description: Shows up beneath google results, etc -->
         <!-- ////////// -->
         <!-- Open Graph -->
-        <meta property="og:title" content=""> <!--  The title of your object as it should appear within the graph, e.g., "The Rock". --> 
+        <meta property="og:title" content="Birds of Lake Merritt"> <!--  The title of your object as it should appear within the graph, e.g., "The Rock". --> 
         <meta property="og:type" content="website"> <!-- this should always be website -->
-        <meta property="og:url" content=""> <!-- The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/". -->
-        <meta property="og:image" content=""> <!-- An image URL which should represent your object within the graph. -->
+        <meta property="og:url" content="https://birdsoflakemerritt.com/"> <!-- The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/". -->
+        <meta property="og:image" content="https://birdsoflakemerritt.com/images/cover.jpg"> <!-- An image URL which should represent your object within the graph. -->
         <!-- ////////// -->
-        <!-- Twitter Card Metadata -->
-        <meta name="twitter:card" content="summary" /> <!-- should always be set to summary -->
-        <meta name="twitter:site" content="" /> <!-- twitter @username -->
-        <meta name="twitter:title" content="" /> <!-- A concise title for the related content. -->
-        <meta name="twitter:description" content="" /> <!-- A description that concisely summarizes the content as appropriate for presentation within a Tweet.-->
-        <meta name="twitter:image" content="" />  <!-- An image representing the content of the page -->     
-        <meta name="twitter:image:alt" content="" /> <!-- Descriptive text of the image for visually impaired --> 
     </head>
     <body class="flex flex-col items-center text-lg relative">
 
@@ -33,15 +26,20 @@
         <div class="w-full xl:w-3/4">
             <!-- INTRO -->
             <section id="intro" class="m-8 ">
-                <div class="text-center pb-8 min-h-screen h-auto md:h-full flex flex-col items-center ">
-                    <h1 class=" text-7xl pt-32 font-bold leading-normal">Birds of Lake Merritt</h1>
-                    <p class="text-2xl pt-24 pb-12 md:pb-0 font-light max-w-xl leading-10">A book about the birds, the people, and the history of the lake in the center of Oakland, California</p>                    
+                <figure class="pt-16 pb-4 hidden md:block">
+                    <h1 class=" text-7xl pt-12 pb-12 font-bold leading-normal">Birds of Lake Merritt</h1>
 
-                    <figure class="pt-36 pb-4 hidden md:block">
-                        <img class="w-full" src="images/duck-sign.jpg"
-                            alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
-                        <figcaption class="text-xs pt-2 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
-                    </figure>                         
+                    <img class="w-full" src="images/duck-sign.jpg"
+                        alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
+                    <figcaption class="text-sm pt-2 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
+                </figure>                     
+                <div class=" pb-8 flex flex-col ">
+                  
+                    <p class="text-xl py-16 md:pb-0 font-light max-w-2xl leading-10">
+                        Lake Merritt in Oakland, California, is home to the first official wildlife refuge in the United States. <i>Birds of Lake Merritt</i> tells the history of this lake and introduces fifteen of the waterbird species that can be found there.
+                    </p>                    
+
+                       
                     <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
                     <div id="current-temp-star" class="h-56 w-56 grid place-content-center text-center absolute md:right-4 md:top-4 invisible md:visible">
                         Today at the lake
@@ -51,15 +49,14 @@
                     </div>              
 
                 </div>
-                <div class="border-t border-dashed pt-16">
-                    <!-- <h2 class="self-center  pb-16 text-5xl text-center">About the Book</h2> -->
+                <div class="border-t border-dashed border-gray-500 pt-16">
+                    <h2 class="self-center  pb-16 text-5xl text-center">About the Book</h2>
                     <div class="flex flex-col sm:flex-row sm:space-x-12">
                         <div class="sm:w-1/2 pb-12">
                             <img src="images/cover.jpg" class="shadow-lg" />
                         </div>
                         
                         <div class="sm:w-1/2">
-                            <p><i>Birds of Lake Merritt</i> tells the history of Lake Merritt, the first official wildlife refuge in the United States, and introduces us to fifteen of the many waterbird species that can be found their.</p>
     
                             <ul class="list-disc px-4 pb-4">
                                 <li>Hardcover</li>
@@ -72,12 +69,12 @@
                             <div class="bg-yellow-100 rounded p-4">
                             <p class="font-bold uppercase">Order online</p>
                             <div class="flex flex-wrap flex-row gap-2 pb-4">
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 underline hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday Books</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 underline hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 underline hover:bg-yellow-200" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 underline hover:bg-yellow-200" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
+                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday Books</a><br />
+                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
+                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
+                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
                                 
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 underline hover:bg-yellow-200" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />
+                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />
                             </div>
                             <p class="border-t border-dashed border-blue-600 pt-2 mb-0">Or, at your favorite <a href="https://www.indiebound.org/book/9781597145480">local bookstore</a>.</p>
                             </div>
@@ -88,25 +85,25 @@
                 </div>
             </section>
             <!-- PRAISE -->
-            <section class=" border-t border-dashed pt-16 my-16 mx-8">
+            <section class=" border-t border-dashed border-gray-500 pt-16 my-16 mx-8">
                 <h2 class="self-center  pb-16 text-5xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
-                <div class="grid grid-cols-2 gap-16">               
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">               
    
                         <blockquote>
                             “I’ve always known Lake Merritt as a great place to look for birds, not knowing that it was originally designated as a bird sanctuary over 150 years ago—the first wildlife refuge in the country! This charming book is the perfect introduction to the lake and its birds, and it’s sure to give you a new appreciation of both.”
-                            <footer><strong>DAVID ALLEN SIBLEY</strong>, author of <i>What It’s Like to Be a Bird</i></footer>
+                            <footer><strong><a href="https://www.sibleyguides.com/">DAVID ALLEN SIBLEY</a></strong>, author of <i>What It’s Like to Be a Bird</i></footer>
                         </blockquote>
                         <blockquote>
                             “With brush and words, Alex Harris brings out the local color of beloved birds in the heart of Oakland. Through each bird’s backstory, we see that Lake Merritt is a meeting spot for local avian residents and international travelers alike. Alex’s bird portraits capture the life, whimsy, and identification details of fifteen common species, making this a great introduction to birds for adults and youth.” 
-                            <footer><strong>JOHN MUIR LAWS</strong>, author of <i>The Laws Guide to Drawing Birds</i></footer>
+                            <footer><strong><a href="https://johnmuirlaws.com/">JOHN MUIR LAWS</a></strong>, author of <i>The Laws Guide to Drawing Birds</i></footer>
                         </blockquote>                           
                         <blockquote>
                             "Just like the birds that flock to Lake Merritt every winter, I find myself returning to this book again and again. Every time I absorb these pages, I’m instantly transported to my favorite place in Oakland."
-                            <footer><Strong>LIAM O'DONAGHUE</Strong>, host of East Bay Yesterday</footer>
+                            <footer><Strong><a href="https://eastbayyesterday.com/">LIAM O'DONAGHUE</a></Strong>, host of East Bay Yesterday</footer>
                         </blockquote>                      
                         <blockquote>
                             “Beautifully illustrated and written, this is a must-have for anyone who wants to better understand and appreciate our neighbors.”
-                            <footer><strong>JENNY ODELL</strong>, author of <i>How to Do Nothing</i></footer>
+                            <footer><strong><a href="https://www.jennyodell.com/">JENNY ODELL</a></strong>, author of <i>How to Do Nothing</i></footer>
                         </blockquote>
                           
 
@@ -122,14 +119,14 @@
                 </div>                     
             </section>          
             <!-- VISIT & BIRD STUFF-->
-            <section id="visit-section" class="border-gray-300 border-t border-dashed pt-16 m-8 flex flex-col"> 
+            <section id="visit-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
                 
                 <h2 class=" pb-16 text-5xl self-center">Visiting the lake</h2>
                 <p class="text-center pb-8 text-2xl">Reading about the lake is great, but visiting is even better.</p>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
                     <div class="w-full md:w-3/5 flex flex-col">
                         
-                        <img class="max-w-md self-center" src="images/MAP.png" />
+                        <img class="max-w-md p-8 self-center" src="images/MAP.png" />
                     </div>
                     <div class="w-full md:w-2/5">
                         <p>Perhaps the best place to start when looking at birds at Lake Merritt is the <a href="https://www.openstreetmap.org/way/37013177">rotary nature center</a>. Even if the center itself is not open, the pond and nearby bird islands often have many types of birds visible, no binoculars needed (but they help!). Walk in either direction and see what other kinds of birds you can spot.</em></p>
@@ -144,7 +141,7 @@
                 </div>
                 <div class="w-full flex flex-col items-center">
                     
-                    <p class="pt-16 mt-16 max-w-lg border-t border-dotted border-gray-400">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
+                    <p class="pt-16 mt-16 max-w-lg border-t border-dashed border-gray-500">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
 
                     <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg ">
                         <h3 class="text-xl  border-b border-black py-2 px-4 text-center">Recent Observations</h3>
@@ -159,7 +156,7 @@
                     </div>   
                     <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
 
-                    <p class="mx-4 pt-8 mt-8 pb-12 max-w-lg border-t border-dotted border-gray-400">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>
+                    <p class="mx-4 pt-8 mt-8 pb-12 max-w-lg border-t border-dashed border-gray-500">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>
 
                     <div class="flex flex-col md:flex-row md:space-x-8">
                         <div class="border-double border-4 border-black rounded shadow-lg mb-6">
@@ -202,7 +199,7 @@
                  
             </section>
             <!-- FURTHER RESOURCES -->
-            <section class="border-gray-300 border-t border-dashed pt-16 m-8 flex flex-col">
+            <section class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col">
                 <h2 class="self-center  pb-16 text-3xl text-center">Further Resources</em></h2>
                 <ul class="list-disc list-inside">
                     <li><a href="https://www.youtube.com/watch?v=c8sYscREWws">Lake Merritt Wildlife Refuge 150th Anniversary Documentary</a></li>
@@ -217,7 +214,7 @@
         <!-- FURTHER RESOURCES -->
 
         <!--  ABOUT THE AUTHOR-->
-        <div class="border-t border-dashed border-gray-300 m-8 xl:w-3/4">
+        <div class="border-t border-dashed border-gray-500 m-8 xl:w-3/4">
             <section id="author-section" class="pt-8 m-8 md:m-0 flex flex-col"> 
                 <h3 class=" pb-6 text-2xl self-center">About the author</h3>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
