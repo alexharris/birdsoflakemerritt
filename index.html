@@ -17,8 +17,11 @@
         <meta property="og:url" content="https://birdsoflakemerritt.com/"> <!-- The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/". -->
         <meta property="og:image" content="https://birdsoflakemerritt.com/images/cover.jpg"> <!-- An image URL which should represent your object within the graph. -->
         <!-- ////////// -->
+        <!-- Fathom -->
+        <script src="https://cdn.usefathom.com/script.js" data-site="UYXAOIMT" defer></script>
+        <!-- / Fathom -->        
     </head>
-    <body class="flex flex-col items-center text-lg relative">
+    <body class="flex flex-col items-center text-lg relative bg-yellow-50">
 
             
             
@@ -26,8 +29,17 @@
         <div class="w-full xl:w-3/4">
             <!-- INTRO -->
             <section id="intro" class="m-8 ">
+                <div id="current-temp-star" class="bg-yellow-50 p-2 w-full">
+                    <span class="font-bold" id="current-name"></span>
+                    <span class="font-bold"> at the lake: </span>
+                    <img class="h-6 inline" id="current-icon" />
+                    <span id="current-temp"></span>
+                    <span id="short-forecast"></span>
+        
+                </div>                   
+                <h1 class="text-5xl md:text-8xl pt-24 pb-12 font-bold leading-normal">Birds of Lake Merritt</h1>
                 <figure class="pt-16 pb-4 hidden md:block">
-                    <h1 class=" text-7xl pt-12 pb-12 font-bold leading-normal">Birds of Lake Merritt</h1>
+                    
 
                     <img class="w-full" src="images/duck-sign.jpg"
                         alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
@@ -35,18 +47,13 @@
                 </figure>                     
                 <div class=" pb-8 flex flex-col ">
                   
-                    <p class="text-xl py-16 md:pb-0 font-light max-w-2xl leading-10">
+                    <p class="text-xl py-16 md:pb-0 font-light w-full md:w-1/2 leading-10">
                         Lake Merritt in Oakland, California, is home to the first official wildlife refuge in the United States. <i>Birds of Lake Merritt</i> tells the history of this lake and introduces fifteen of the waterbird species that can be found there.
                     </p>                    
 
                        
                     <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
-                    <div id="current-temp-star" class="h-56 w-56 grid place-content-center text-center absolute md:right-4 md:top-4 invisible md:visible">
-                        Today at the lake
-                        <div id="current-temp" class="text-5xl pt-1"></div>
-                        <div id="short-forecast" class="text-xs px-6 pt-2"></div>
-            
-                    </div>              
+           
 
                 </div>
                 <div class="border-t border-dashed border-gray-500 pt-16">
@@ -66,17 +73,16 @@
                                 <li>Over 15 full color paintings</li>
                                 <li>$25 price</li>
                             </ul>
-                            <div class="bg-yellow-100 rounded p-4">
-                            <p class="font-bold uppercase">Order online</p>
-                            <div class="flex flex-wrap flex-row gap-2 pb-4">
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday Books</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
-                                
-                                <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />
-                            </div>
-                            <p class="border-t border-dashed border-blue-600 pt-2 mb-0">Or, at your favorite <a href="https://www.indiebound.org/book/9781597145480">local bookstore</a>.</p>
+                            <div class="bg-yellow-100 rounded p-4 border-double border-4 border-black shadow">
+                                <p class="font-bold uppercase">Order online</p>
+                                <div class="flex flex-wrap flex-row gap-2 pb-4">
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />                            
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
+                                </div>
+                                <p class="border-t border-dashed border-blue-600 pt-2 mb-0">Or, at your favorite <a href="https://www.indiebound.org/book/9781597145480">local bookstore</a>.</p>
                             </div>
                         </div>
                         
@@ -143,7 +149,7 @@
                     
                     <p class="pt-16 mt-16 max-w-lg border-t border-dashed border-gray-500">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
 
-                    <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg ">
+                    <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg bg-yellow-100">
                         <h3 class="text-xl  border-b border-black py-2 px-4 text-center">Recent Observations</h3>
 
                         <table id="ebird" class="w-full my-6">
@@ -159,7 +165,7 @@
                     <p class="mx-4 pt-8 mt-8 pb-12 max-w-lg border-t border-dashed border-gray-500">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>
 
                     <div class="flex flex-col md:flex-row md:space-x-8">
-                        <div class="border-double border-4 border-black rounded shadow-lg mb-6">
+                        <div class="border-double border-4 border-black rounded shadow-lg mb-6 bg-yellow-100">
                             <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
                             <div id="weather" class="flex flex-row space-x-4 p-4">
                                 <div>
@@ -172,7 +178,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border-double border-4 border-black rounded shadow-lg mb-6">
+                            <div class="border-double border-4 border-black rounded shadow-lg mb-6 bg-yellow-100">
                                 <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name2"></span>'s Forecast</h3>
                                 <div id="weather2" class="flex flex-row space-x-4 p-4">
                                     <div>
@@ -226,7 +232,14 @@
                     <div class="w-full md:w-3/4">
                         <p>
                             Alex Harris, born and raised in Berkeley, California, is an artist interested in using art and technology to look at how humans interface with the natural world. He has a BA in environmental studies from the University of California, Santa Cruz, and previously worked as the web editor and electronic communications manager at the Berkeley Art Museum and Pacific Film Archive. He lives and works in Oakland, California.
-                        </p>                        
+                        </p>     
+                        <form  class="bg-yellow-100 rounded p-4 border-double border-4 border-black shadow" action="https://tinyletter.com/alexharris" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/alexharris', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                            <p><label for="tlemail">Sign up for a very, very occasional email updates</label></p>
+                            <input type="text" class="p-2 border-2 border-blue-800 rounded" style="width:300px" name="email" id="tlemail" placeholder="email address"/>
+                            <input type="hidden" value="1" name="embed"/>
+                            <input class="p-2 uppercase cursor-pointer border-2 border-blue-800 bg-yellow-100 hover:bg-yellow-200 rounded text-blue-800" type="submit" value="Subscribe" />
+                        </form>
+                                                   
                     </div>
                 </div>
             </section>              

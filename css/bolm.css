@@ -6,7 +6,7 @@
 } */
 
 body {
-    background-color: #ffffe1;
+    /* background-color: #ffffe1; */
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -48,9 +48,9 @@ blockquote footer {
 
 #current-temp-star {
     /* color: red; */
-    background-image: url(star.svg);
+    /* background-image: url(star.svg);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 

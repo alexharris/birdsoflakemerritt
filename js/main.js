@@ -21,9 +21,12 @@
     fetch("https://api.weather.gov/gridpoints/MTR/89,104/forecast")
     .then(response => response.json())
     .then(result => {
+      console.log(result);
       showWeather(result.properties.periods[0])
       showWeather2(result.properties.periods[2])
 
+      document.getElementById('current-name').textContent = result.properties.periods[0].name
+      document.getElementById('current-icon').src = result.properties.periods[0].icon
       document.getElementById('current-temp').textContent = result.properties.periods[0].temperature + '° ' + result.properties.periods[0].temperatureUnit
       document.getElementById('short-forecast').textContent = result.properties.periods[0].shortForecast
 
