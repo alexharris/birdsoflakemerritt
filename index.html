@@ -29,7 +29,7 @@
         <div class="w-full xl:w-3/4">
             <!-- INTRO -->
             <section id="intro" class="m-8 ">
-                <div id="current-temp-star" class="bg-yellow-50 p-2 w-full">
+                <div id="current-temp-star" class="text-center p-2 w-full ">
                     <span class="font-bold" id="current-name"></span>
                     <span class="font-bold"> at the lake: </span>
                     <img class="h-6 inline" id="current-icon" />
@@ -37,8 +37,8 @@
                     <span id="short-forecast"></span>
         
                 </div>                   
-                <h1 class="text-5xl md:text-8xl pt-24 pb-12 font-bold leading-normal">Birds of Lake Merritt</h1>
-                <figure class="pt-16 pb-4 hidden md:block">
+                <h1 class="text-5xl md:text-8xl pt-24 pb-12 font-bold leading-normal text-center">Birds of Lake Merritt</h1>
+                <figure class="pt-16 pb-4">
                     
 
                     <img class="w-full" src="images/duck-sign.jpg"
@@ -47,7 +47,7 @@
                 </figure>                     
                 <div class=" pb-8 flex flex-col ">
                   
-                    <p class="text-xl py-16 md:pb-0 font-light w-full md:w-1/2 leading-10">
+                    <p class="text-xl py-16 md:pb-0 font-light w-full md:w-2/3 leading-10">
                         Lake Merritt in Oakland, California, is home to the first official wildlife refuge in the United States. <i>Birds of Lake Merritt</i> tells the history of this lake and introduces fifteen of the waterbird species that can be found there.
                     </p>                    
 
@@ -73,7 +73,7 @@
                                 <li>Over 15 full color paintings</li>
                                 <li>$25 price</li>
                             </ul>
-                            <div class="bg-yellow-100 rounded p-4 border-double border-4 border-black shadow">
+                            <div class="rounded p-4 border-double border-4 border-black shadow">
                                 <p class="font-bold uppercase">Order online</p>
                                 <div class="flex flex-wrap flex-row gap-2 pb-4">
                                     <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday</a><br />
@@ -145,11 +145,15 @@
                         
                     </div>
                 </div>
-                <div class="w-full flex flex-col items-center">
-                    
-                    <p class="pt-16 mt-16 max-w-lg border-t border-dashed border-gray-500">Many of the birds at Lake Merritt are seasonal visitors. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
+            </section>
+            <section id="bird-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
 
-                    <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg bg-yellow-100">
+                <div class="flex flex-col md:flex-row md:space-x-12">
+                    <div class="w-full md:w-1/2 pb-12">
+                    <h2 class="self-center  pb-16 text-3xl text-center">Birds</em></h2>
+
+                    <p>Many of the birds at Lake Merritt are seasonal visitors, so you may only see certain species depending on when you go. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
+                    <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg">
                         <h3 class="text-xl  border-b border-black py-2 px-4 text-center">Recent Observations</h3>
 
                         <table id="ebird" class="w-full my-6">
@@ -161,11 +165,27 @@
                         </table>
                     </div>   
                     <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <figure class=" ">
+            
+                        <img src="images/coot.png"
 
-                    <p class="mx-4 pt-8 mt-8 pb-12 max-w-lg border-t border-dashed border-gray-500">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>
+                                alt="Painting of an American Coot">
+                        <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
+                    </figure> 
 
-                    <div class="flex flex-col md:flex-row md:space-x-8">
-                        <div class="border-double border-4 border-black rounded shadow-lg mb-6 bg-yellow-100">
+                                    
+                    </div>
+                </div>
+            </section>
+            <section id="weather-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
+                
+                <div class="flex flex-col md:flex-row md:space-x-12">
+                    <div class="md:w-1/2 pb-12 md:order-2">
+                        <h2 class="self-center  pb-16 text-3xl text-center">Weather</em></h2>
+                        <p class="mx-4 pb-12 max-w-lg">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>                    
+                        <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                             <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
                             <div id="weather" class="flex flex-row space-x-4 p-4">
                                 <div>
@@ -178,7 +198,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border-double border-4 border-black rounded shadow-lg mb-6 bg-yellow-100">
+                            <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                                 <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name2"></span>'s Forecast</h3>
                                 <div id="weather2" class="flex flex-row space-x-4 p-4">
                                     <div>
@@ -191,19 +211,19 @@
                                     </ul>
                                 </div>
                             </div>  
-                       
-                        </div>
-                        <p class="pt-16 pb-12 max-w-sm">and here is an American Coot:</p>
+                                        
+                    </div>                    
+                    <div class="md:w-1/2 pb-12">
                         <figure class="self-center">
-            
-                            <img src="images/coot.png"
-                            class="w-96 h-96"
-                                    alt="Painting of an American Coot">
-                            <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
-                        </figure>                         
+                
+                            <img src="images/greater-scaup.png"
+                                    alt="Painting of Greater Scaup">
+                            <figcaption class="text-sm text-center pt-4">Greater Scaup.</figcaption>
+                        </figure>  
+                    </div>
+
                 </div>
-                 
-            </section>
+            </section>            
             <!-- FURTHER RESOURCES -->
             <section class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col">
                 <h2 class="self-center  pb-16 text-3xl text-center">Further Resources</em></h2>
