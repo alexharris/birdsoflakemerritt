@@ -18,19 +18,19 @@
       .then(result => showBirds(result))
       .catch(error => console.log('error', error));
 
-    fetch("https://api.weather.gov/gridpoints/MTR/89,104/forecast")
-    .then(response => response.json())
-    .then(result => {
-      console.log(result);
-      showWeather(result.properties.periods[0])
-      showWeather2(result.properties.periods[1])
+    // fetch("https://api.weather.gov/gridpoints/MTR/89,104/forecast")
+    // .then(response => response.json())
+    // .then(result => {
+    //   console.log(result);
+    //   showWeather(result.properties.periods[0])
+    //   showWeather2(result.properties.periods[1])
 
-      document.getElementById('current-name').textContent = result.properties.periods[0].name
-      document.getElementById('current-icon').src = result.properties.periods[0].icon
-      document.getElementById('current-temp').textContent = result.properties.periods[0].temperature + '° ' + result.properties.periods[0].temperatureUnit
-      document.getElementById('short-forecast').textContent = result.properties.periods[0].shortForecast
+    //   document.getElementById('current-name').textContent = result.properties.periods[0].name
+    //   document.getElementById('current-icon').src = result.properties.periods[0].icon
+    //   document.getElementById('current-temp').textContent = result.properties.periods[0].temperature + '° ' + result.properties.periods[0].temperatureUnit
+    //   document.getElementById('short-forecast').textContent = result.properties.periods[0].shortForecast
 
-    })
+    // })
 
 
     var today = new Date();
@@ -101,21 +101,21 @@ function showBirds(birds) {
       
  }
 
-function showWeather(forecast) {
-  document.getElementById('forecast-name').textContent = forecast.name
-  document.getElementById('short-forecast1').textContent = forecast.shortForecast
-  document.getElementById('temperature').textContent = forecast.temperature
-  document.getElementById('wind-speed').textContent = forecast.windSpeed
-  document.getElementById('weather-icon').src = forecast.icon
-}
+// function showWeather(forecast) {
+//   document.getElementById('forecast-name').textContent = forecast.name
+//   document.getElementById('short-forecast1').textContent = forecast.shortForecast
+//   document.getElementById('temperature').textContent = forecast.temperature
+//   document.getElementById('wind-speed').textContent = forecast.windSpeed
+//   document.getElementById('weather-icon').src = forecast.icon
+// }
 
-function showWeather2(forecast) {
-  document.getElementById('forecast-name2').textContent = forecast.name
-  document.getElementById('short-forecast2').textContent = forecast.shortForecast
-  document.getElementById('temperature2').textContent = forecast.temperature
-  document.getElementById('wind-speed2').textContent = forecast.windSpeed
-  document.getElementById('weather-icon2').src = forecast.icon
-}
+// function showWeather2(forecast) {
+//   document.getElementById('forecast-name2').textContent = forecast.name
+//   document.getElementById('short-forecast2').textContent = forecast.shortForecast
+//   document.getElementById('temperature2').textContent = forecast.temperature
+//   document.getElementById('wind-speed2').textContent = forecast.windSpeed
+//   document.getElementById('weather-icon2').src = forecast.icon
+// }
 
 
 

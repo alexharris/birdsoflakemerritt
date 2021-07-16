@@ -30,16 +30,16 @@
 
         <div class="w-full xl:w-3/4">
             <!-- INTRO -->
-            <section id="intro" class="m-4">
-                <div id="current-temp-star" class="text-center p-2 w-full">
+            <section id="intro" class="m-8">
+                <!-- <div id="current-temp-star" class="text-center p-2 w-full">
                     <span class="font-bold" id="current-name"></span>
                     <span class="font-bold"> at the lake: </span>
                     <img class="h-6 inline" id="current-icon" />
                     <span id="current-temp"></span>
                     <span id="short-forecast"></span>
         
-                </div>                   
-                <h1 class="text-5xl md:text-6xl pt-16 pb-12 font-bold leading-normal text-center">Birds of Lake Merritt</h1>
+                </div>                    -->
+                <h1 class="text-5xl md:text-6xl pt-12 pb-20 font-bold leading-normal text-center">Birds of Lake Merritt</h1>
                 <div class="flex flex-col sm:flex-row sm:space-x-12">
                     <figure class="w-full md:w-1/2">
                     
@@ -59,7 +59,7 @@
                             <img src="images/cover.jpg" class="shadow-lg" />
                         </div>
                         
-                        <div class="sm:w-1/2">
+                        <div class="sm:w-1/2 order-1">
                             <h2 class="self-center  pb-8 text-3xl">About the Book</h2>
 
                             <ul class="list-disc px-4 pb-8">
@@ -92,8 +92,8 @@
             </section>
             <!-- PRAISE -->
             <section class=" border-t border-dashed border-gray-500 pt-16 my-16 mx-8">
-                <h2 class="self-center  pb-16 text-4xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">               
+                <h2 class="self-center  pb-12 text-4xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">               
    
                         <blockquote>
                             “I’ve always known Lake Merritt as a great place to look for birds, not knowing that it was originally designated as a bird sanctuary over 150 years ago—the first wildlife refuge in the country! This charming book is the perfect introduction to the lake and its birds, and it’s sure to give you a new appreciation of both.”
@@ -130,24 +130,24 @@
                 <!-- <h2 class=" pb-16 text-5xl self-center">Visiting the lake</h2> -->
                 <p class="text-center pb-8 text-2xl">Reading about the lake is great, but visiting is even better.</p>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
-                    <div class="w-full md:w-3/5 flex flex-col">
+                    <div class="w-full md:w-1/2 flex flex-col">
                         
                         <img class="max-w-md p-8 self-center" src="images/MAP.png" />
                     </div>
-                    <div class="w-full md:w-2/5">
+                    <div class="w-full md:w-1/2">
                         <p>Perhaps the best place to start when looking at birds at Lake Merritt is the <a href="https://www.openstreetmap.org/way/37013177">rotary nature center</a>. Even if the center itself is not open, the pond and nearby bird islands often have many types of birds visible, no binoculars needed (but they help!). Walk in either direction and see what other kinds of birds you can spot.</em></p>
                         <p>Additionally, the <a href="https://goldengateaudubon.org">Golden Gate Audubon Society</a> hosts regular bird watching field trips at the lake, in case you want something with a little more structure.</p>
                         <figure>
                             <img class="py-6" src="images/dome.png" alt="a drawing of the geodesic dome at Lake Merritt" />
-                            <figcaption class="text-xs text-center pt-2"> Speaking of structure, the lake is also home to the <A href="https://cfairyland.blogspot.com/2016/11/the-mystery-of-lakeside-dome.html">first permanent geodesic dome constructed on the west coast</A>, still in place near the nature center. </figcaption>
+                            <figcaption class="text-xs pt-2"> Speaking of structure, the lake is also home to the <A href="https://cfairyland.blogspot.com/2016/11/the-mystery-of-lakeside-dome.html">first permanent geodesic dome constructed on the west coast</A>, still in place near the nature center. </figcaption>
                         </figure>
                         
                         
                     </div>
                 </div>
             </section>
-            <section id="bird-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
-                <h2 class="self-center  pb-8 text-2xl text-center">Birds at the Lake</em></h2>
+            <section id="bird-section" class="border-gray-500 border-t border-dashed pt-8 m-8 flex flex-col"> 
+                <h2 class="self-center pb-8 text-center text-2xl">Birds at the Lake</em></h2>
 
                 <div class="flex flex-col md:flex-row md:gap-12">
                     <div class="w-full md:w-1/2 pb-12">
@@ -164,7 +164,7 @@
                                 <tbody></tbody>
                             </table>
                         </div>   
-                        <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
+                        <p class="pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
                     </div>
                     <div class="w-full md:w-1/2 px-8 self-center">
                         <div class="slick-slider inline-block">
@@ -188,11 +188,10 @@
                     </div>
                 </div>
             </section>
-            <section id="weather-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
+            <!-- <section id="weather-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
                 
                 <div class="flex flex-col md:flex-row md:gap-12">
                     <div class="md:w-1/3 pb-12 md:order-2">
-                        <!-- <h2 class="self-center  pb-6 text-3xl text-center">Weather</em></h2> -->
                         <p class="pb-6 max-w-lg">And here is the weather for today and tomorrow, just in case you are thinking about visiting today or tomorrow:</p>                    
                         <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                             <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
@@ -230,10 +229,10 @@
                     </div>
 
                 </div>
-            </section>            
+            </section>             -->
             <!-- FURTHER RESOURCES -->
             <section class="border-gray-500 border-t border-dashed pt-8 m-8 flex flex-col">
-                <h2 class="self-center pb-12 text-2xl text-center">Further Resources</em></h2>
+                <h2 class="self-center pb-8 text-2xl text-center">Further Resources</em></h2>
                 <ul class="list-disc list-inside">
                     <li><a href="https://www.youtube.com/watch?v=c8sYscREWws">Lake Merritt Wildlife Refuge 150th Anniversary Documentary</a></li>
                     <li><a href="https://youtu.be/nXVPkhsq5yg">150th Anniversary Celebration Program</a></li>
@@ -251,21 +250,23 @@
             <section id="author-section" class="pt-8 flex flex-col"> 
                 
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
-                    <div class="w-full md:w-1/4">
-                        <figure>
+                    <div class="w-full md:w-3/5">
+                        <!-- <figure>
                             <img  src="images/author.jpg" alt="Alex Harris" />                            
-                        </figure>                           
-                    </div>
-                    <div class="w-full md:w-3/4">
-                        <h3 class=" pb-4 text-2xl self-center">About the author</h3>                        
+                        </figure>       -->
+                        <h3 class=" pb-8 text-2xl text-center">About the author</h3>                        
                         <p>
                             Alex Harris, born and raised in Berkeley, California, is an artist interested in using art and technology to look at how humans interface with the natural world. He has a BA in environmental studies from the University of California, Santa Cruz, and previously worked as the web editor and electronic communications manager at the Berkeley Art Museum and Pacific Film Archive. He lives and works in Oakland, California.
-                        </p>     
-                        <form  class="bg-yellow-100 rounded p-4 border-double border-4 border-black shadow" action="https://tinyletter.com/alexharris" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/alexharris', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+                        </p>                                               
+                    </div>
+                     
+                    <div class="w-full md:w-2/5">
+  
+                        <form  class="rounded p-4 border-double border-4 border-black shadow" action="https://tinyletter.com/alexharris" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/alexharris', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
                             <p><label for="tlemail">Sign up for a very, very occasional email updates</label></p>
-                            <input type="text" class="p-2 border-2 border-blue-800 rounded" style="width:300px" name="email" id="tlemail" placeholder="email address"/>
+                            <input type="text" class="p-2 border-2 border-blue-800 rounded w-full mb-2" name="email" id="tlemail" placeholder="email address"/>
                             <input type="hidden" value="1" name="embed"/>
-                            <input class="p-2 uppercase cursor-pointer border-2 border-blue-800 bg-yellow-100 hover:bg-yellow-200 rounded text-blue-800" type="submit" value="Subscribe" />
+                            <input class="p-2 uppercase cursor-pointer border-2 border-blue-800  bg-yellow-50 hover:bg-yellow-100 rounded text-blue-800 w-full" type="submit" value="Subscribe" />
                         </form>
                                                    
                     </div>
