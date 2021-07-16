@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="apple-touch-icon" href="icon.png"> -->
         <!-- CSS HERE -->
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">     
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">    
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>              
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>              
         <link rel="stylesheet" href="css/bolm.css">
         <!-- END CSS -->
         <title>Birds of Lake Merritt</title> <!-- Page Title: Shows up in browser tabs and search results -->
@@ -28,8 +30,8 @@
 
         <div class="w-full xl:w-3/4">
             <!-- INTRO -->
-            <section id="intro" class="m-8 ">
-                <div id="current-temp-star" class="text-center p-2 w-full ">
+            <section id="intro" class="m-4">
+                <div id="current-temp-star" class="text-center p-2 w-full">
                     <span class="font-bold" id="current-name"></span>
                     <span class="font-bold"> at the lake: </span>
                     <img class="h-6 inline" id="current-icon" />
@@ -37,38 +39,33 @@
                     <span id="short-forecast"></span>
         
                 </div>                   
-                <h1 class="text-5xl md:text-8xl pt-24 pb-12 font-bold leading-normal text-center">Birds of Lake Merritt</h1>
-                <figure class="pt-16 pb-4">
+                <h1 class="text-5xl md:text-6xl pt-16 pb-12 font-bold leading-normal text-center">Birds of Lake Merritt</h1>
+                <div class="flex flex-col sm:flex-row sm:space-x-12">
+                    <figure class="w-full md:w-1/2">
                     
-
-                    <img class="w-full" src="images/duck-sign.jpg"
-                        alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
-                    <figcaption class="text-sm pt-2 text-left">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
-                </figure>                     
-                <div class=" pb-8 flex flex-col ">
-                  
-                    <p class="text-xl py-16 md:pb-0 font-light w-full md:w-2/3 leading-10">
-                        Lake Merritt in Oakland, California, is home to the first official wildlife refuge in the United States. <i>Birds of Lake Merritt</i> tells the history of this lake and introduces fifteen of the waterbird species that can be found there.
-                    </p>                    
-
-                       
-                    <!-- <p class="text-sm pb-4">Welcome to the homepage of..</p> -->
-           
-
+                        <img class="w-full" src="images/duck-sign.jpg"
+                            alt="Ducks on lawn with a sign that says 'This space reserved for the ducks. Please keep out.'">
+                        <figcaption class="text-sm pt-2 text-left pb-4">A photo of ducks at Lake Merritt in 1920, by William L. Finley. Courtesy, oddly enough, of the Oregon Historical Society.</figcaption>
+                    </figure>                     
+                    <div class=" pb-8 flex flex-col w-full md:w-1/2">
+                        <h2 class="text-2xl pb-4"> A richly illustrated birding guide to the nation's first official wildlife refuge</h2>
+                        <p>This book introduces us to the 15 of the ducks, herons, pelicans, geese and other species of bird that can be found on the waters of Lake Merritt in Oakland, California. The introduction tells the history of the "lake" (spoiler alert it isn't actually a lake) and how it came to be home to the first officially designated wildlife refuge in the nation.</p>
+                        
+                    </div>
                 </div>
                 <div class="border-t border-dashed border-gray-500 pt-16">
-                    <h2 class="self-center  pb-16 text-5xl text-center">About the Book</h2>
                     <div class="flex flex-col sm:flex-row sm:space-x-12">
                         <div class="sm:w-1/2 pb-12">
                             <img src="images/cover.jpg" class="shadow-lg" />
                         </div>
                         
                         <div class="sm:w-1/2">
-    
-                            <ul class="list-disc px-4 pb-4">
+                            <h2 class="self-center  pb-8 text-3xl">About the Book</h2>
+
+                            <ul class="list-disc px-4 pb-8">
                                 <li>Hardcover</li>
                                 <li>5.5 x 8.5 inches</li>
-                                <li>80 pages</li>
+                                <li>70 pages</li>
                                 <li>Published by Heyday Books</li>
                                 <li>Over 15 full color paintings</li>
                                 <li>$25 price</li>
@@ -76,12 +73,15 @@
                             <div class="rounded p-4 border-double border-4 border-black shadow">
                                 <p class="font-bold uppercase">Order online</p>
                                 <div class="flex flex-wrap flex-row gap-2 pb-4">
-                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday</a><br />
-                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
-                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
-                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />                            
-                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-200" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://shop.aer.io/heyday/p/Birds_of_Lake_Merritt/9781597145480-4706?collection=/0">Heyday</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://bookshop.org/books/birds-of-lake-merritt/9781597145480">Bookshop.org</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://www.barnesandnoble.com/w/birds-of-lake-merritt-alex-harris/1138477832?ean=9781597145480">Barnes & Noble</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://www.booksamillion.com/p/Birds-Lake-Merritt/Alex-Harris/9781597145480?id=8260566434706">BAM!</a><br />                            
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://books.apple.com/us/book/birds-of-lake-merritt/id1549034822">Apple Books (digital)</a><br />
+                                    <a class="border-2 inline-block border-blue-800 rounded p-2 mb-2 text-blue-800 no-underline uppercase hover:bg-yellow-100" href="https://www.amazon.com/Birds-Lake-Merritt-Alex-Harris/dp/1597145483">Amazon</a><br />
+
                                 </div>
+                                
                                 <p class="border-t border-dashed border-blue-600 pt-2 mb-0">Or, at your favorite <a href="https://www.indiebound.org/book/9781597145480">local bookstore</a>.</p>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
             </section>
             <!-- PRAISE -->
             <section class=" border-t border-dashed border-gray-500 pt-16 my-16 mx-8">
-                <h2 class="self-center  pb-16 text-5xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
+                <h2 class="self-center  pb-16 text-4xl text-center">Praise for <em>Birds of Lake Merritt</em></h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16">               
    
                         <blockquote>
@@ -127,7 +127,7 @@
             <!-- VISIT & BIRD STUFF-->
             <section id="visit-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
                 
-                <h2 class=" pb-16 text-5xl self-center">Visiting the lake</h2>
+                <!-- <h2 class=" pb-16 text-5xl self-center">Visiting the lake</h2> -->
                 <p class="text-center pb-8 text-2xl">Reading about the lake is great, but visiting is even better.</p>
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
                     <div class="w-full md:w-3/5 flex flex-col">
@@ -147,86 +147,93 @@
                 </div>
             </section>
             <section id="bird-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
+                <h2 class="self-center  pb-8 text-2xl text-center">Birds at the Lake</em></h2>
 
-                <div class="flex flex-col md:flex-row md:space-x-12">
+                <div class="flex flex-col md:flex-row md:gap-12">
                     <div class="w-full md:w-1/2 pb-12">
-                    <h2 class="self-center  pb-16 text-3xl text-center">Birds</em></h2>
 
-                    <p>Many of the birds at Lake Merritt are seasonal visitors, so you may only see certain species depending on when you go. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
-                    <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full max-w-lg">
-                        <h3 class="text-xl  border-b border-black py-2 px-4 text-center">Recent Observations</h3>
+                        <p>Many of the birds at Lake Merritt are seasonal visitors, so you may only see certain species depending on when you go. Here are the birds covered in <em>Birds of Lake Merritt</em> that have been seen in the last 30 days, according to <a href="https://ebird.org">eBird</a>:</p>
+                        <div class="border-double border-4 border-black rounded shadow-lg mt-8 w-full">
+                            <h3 class="text-xl  border-b border-black py-2 px-4 text-center">Recent Observations</h3>
 
-                        <table id="ebird" class="w-full my-6">
-                            <thead>
-                                <th class="text-left p-4">Bird</th>
-                                <th class="text-right p-4">Number Observed</th>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>   
-                    <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
-                </div>
-                <div class="w-full md:w-1/2">
-                    <figure class=" ">
-            
-                        <img src="images/coot.png"
-
-                                alt="Painting of an American Coot">
-                        <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
-                    </figure> 
-
-                                    
+                            <table id="ebird" class="w-full my-6">
+                                <thead>
+                                    <th class="text-left px-4">Bird</th>
+                                    <th class="text-right px-4">#</th>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>   
+                        <p class="mx-4 pt-12 max-w-lg">Overall, <span id="total-birds"></span> different kinds of bird have been spotted in the last 30 days. See the full list on eBird's <a href="https://ebird.org/hotspot/L268122">Lake Merritt page</a>. </p>
+                    </div>
+                    <div class="w-full md:w-1/2 px-8 self-center">
+                        <div class="slick-slider inline-block">
+                            <figure>
+                                <img src="images/coot.png" alt="Painting of an American Coot">
+                                <figcaption class="text-sm text-center pt-4">American Coot.</figcaption>
+                            </figure> 
+                            <figure>
+                                <img src="images/bcnh.png" alt="Painting of an Black Crowned Night Heron">
+                                <figcaption class="text-sm text-center pt-4">Black Crowned Night Heron.</figcaption>
+                            </figure> 
+                            <figure>
+                                <img src="images/cormorant.png" alt="Painting of an Double-crested Cormorant">
+                                <figcaption class="text-sm text-center pt-4">Double-crested Cormorant.</figcaption>
+                            </figure>       
+                            <figure class="self-center">                
+                                <img src="images/greater-scaup.png" alt="Painting of Greater Scaup">
+                                <figcaption class="text-sm text-center pt-4">Greater Scaup.</figcaption>
+                            </figure>                                                                   
+                        </div>   
                     </div>
                 </div>
             </section>
             <section id="weather-section" class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col"> 
                 
-                <div class="flex flex-col md:flex-row md:space-x-12">
-                    <div class="md:w-1/2 pb-12 md:order-2">
-                        <h2 class="self-center  pb-16 text-3xl text-center">Weather</em></h2>
-                        <p class="mx-4 pb-12 max-w-lg">And here is the weather for today and tomorrow, in case you are weighing a visit:</p>                    
+                <div class="flex flex-col md:flex-row md:gap-12">
+                    <div class="md:w-1/3 pb-12 md:order-2">
+                        <!-- <h2 class="self-center  pb-6 text-3xl text-center">Weather</em></h2> -->
+                        <p class="pb-6 max-w-lg">And here is the weather for today and tomorrow, just in case you are thinking about visiting today or tomorrow:</p>                    
                         <div class="border-double border-4 border-black rounded shadow-lg mb-6">
                             <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name"></span>'s Forecast</h3>
                             <div id="weather" class="flex flex-row space-x-4 p-4">
                                 <div>
                                     <img id="weather-icon" />
-                                    </div>
-                                    <ul class="mt-0 text-lg">
-                                        <li id="short-forecast1"></li>
-                                        <li>Temperature <span id="temperature"></span> F</li>
-                                        <li>Wind <span id="wind-speed"></span></li>
-                                    </ul>
                                 </div>
+                                <ul class="mt-0 text-lg">
+                                    <li id="short-forecast1"></li>
+                                    <li>Temperature <span id="temperature"></span> F</li>
+                                    <li>Wind <span id="wind-speed"></span></li>
+                                </ul>
                             </div>
-                            <div class="border-double border-4 border-black rounded shadow-lg mb-6">
-                                <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name2"></span>'s Forecast</h3>
-                                <div id="weather2" class="flex flex-row space-x-4 p-4">
-                                    <div>
-                                        <img id="weather-icon2" />
-                                    </div>
-                                    <ul class="mt-0 text-lg">
-                                        <li id="short-forecast2"></li>
-                                        <li>Temperature <span id="temperature2"></span> F</li>
-                                        <li>Wind <span id="wind-speed2"></span></li>
-                                    </ul>
+                        </div>
+                        <div class="border-double border-4 border-black rounded shadow-lg mb-6">
+                            <h3 class="text-xl  border-b border-black py-2 px-4 text-center"><span id="forecast-name2"></span>'s Forecast</h3>
+                            <div id="weather2" class="flex flex-row space-x-4 p-4">
+                                <div >
+                                    <img id="weather-icon2" />
                                 </div>
-                            </div>  
+                                <ul class="mt-0 text-lg">
+                                    <li id="short-forecast2"></li>
+                                    <li>Temperature <span id="temperature2"></span> F</li>
+                                    <li>Wind <span id="wind-speed2"></span></li>
+                                </ul>
+                            </div>
+                        </div>  
                                         
                     </div>                    
-                    <div class="md:w-1/2 pb-12">
-                        <figure class="self-center">
-                
-                            <img src="images/greater-scaup.png"
-                                    alt="Painting of Greater Scaup">
-                            <figcaption class="text-sm text-center pt-4">Greater Scaup.</figcaption>
-                        </figure>  
+                    <div class="md:w-2/3 pb-12">
+                        <figure class="self-center">                
+                            <img src="images/merritt-landscape-2.jpg" alt="Painting of Lake Merritt based on a photo taken in 1880">
+                            <figcaption class="text-sm text-center pt-4">Lake Merritt in 1880.</figcaption>
+                        </figure>   
                     </div>
 
                 </div>
             </section>            
             <!-- FURTHER RESOURCES -->
-            <section class="border-gray-500 border-t border-dashed pt-16 m-8 flex flex-col">
-                <h2 class="self-center  pb-16 text-3xl text-center">Further Resources</em></h2>
+            <section class="border-gray-500 border-t border-dashed pt-8 m-8 flex flex-col">
+                <h2 class="self-center pb-12 text-2xl text-center">Further Resources</em></h2>
                 <ul class="list-disc list-inside">
                     <li><a href="https://www.youtube.com/watch?v=c8sYscREWws">Lake Merritt Wildlife Refuge 150th Anniversary Documentary</a></li>
                     <li><a href="https://youtu.be/nXVPkhsq5yg">150th Anniversary Celebration Program</a></li>
@@ -241,8 +248,8 @@
 
         <!--  ABOUT THE AUTHOR-->
         <div class="border-t border-dashed border-gray-500 m-8 xl:w-3/4">
-            <section id="author-section" class="pt-8 m-8 md:m-0 flex flex-col"> 
-                <h3 class=" pb-6 text-2xl self-center">About the author</h3>
+            <section id="author-section" class="pt-8 flex flex-col"> 
+                
                 <div class="flex flex-col md:flex-row md:space-x-8 space-y-12 md:space-y-0">
                     <div class="w-full md:w-1/4">
                         <figure>
@@ -250,6 +257,7 @@
                         </figure>                           
                     </div>
                     <div class="w-full md:w-3/4">
+                        <h3 class=" pb-4 text-2xl self-center">About the author</h3>                        
                         <p>
                             Alex Harris, born and raised in Berkeley, California, is an artist interested in using art and technology to look at how humans interface with the natural world. He has a BA in environmental studies from the University of California, Santa Cruz, and previously worked as the web editor and electronic communications manager at the Berkeley Art Museum and Pacific Film Archive. He lives and works in Oakland, California.
                         </p>     
@@ -265,7 +273,9 @@
             </section>              
         </div>    
         <!-- This is footer stuff that should be on each page -->
-        <script src="js/main.js"></script> <!-- Javacsript -->        
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>        
+        <script type="text/javascript" src="js/slick.min.js"></script>        
+        <script type="text/javascript" src="js/main.js"></script> <!-- Javacsript -->        
     </body>
     </html>
 

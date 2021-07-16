@@ -23,7 +23,7 @@
     .then(result => {
       console.log(result);
       showWeather(result.properties.periods[0])
-      showWeather2(result.properties.periods[2])
+      showWeather2(result.properties.periods[1])
 
       document.getElementById('current-name').textContent = result.properties.periods[0].name
       document.getElementById('current-icon').src = result.properties.periods[0].icon
@@ -101,23 +101,25 @@ function showBirds(birds) {
       
  }
 
- function showWeather(forecast) {
-     console.log(forecast)
-     document.getElementById('forecast-name').textContent = forecast.name
-     document.getElementById('short-forecast1').textContent = forecast.shortForecast
-     document.getElementById('temperature').textContent = forecast.temperature
-     document.getElementById('wind-speed').textContent = forecast.windSpeed
-     document.getElementById('weather-icon').src = forecast.icon
+function showWeather(forecast) {
+  document.getElementById('forecast-name').textContent = forecast.name
+  document.getElementById('short-forecast1').textContent = forecast.shortForecast
+  document.getElementById('temperature').textContent = forecast.temperature
+  document.getElementById('wind-speed').textContent = forecast.windSpeed
+  document.getElementById('weather-icon').src = forecast.icon
+}
 
- }
-
- function showWeather2(forecast) {
+function showWeather2(forecast) {
   document.getElementById('forecast-name2').textContent = forecast.name
   document.getElementById('short-forecast2').textContent = forecast.shortForecast
   document.getElementById('temperature2').textContent = forecast.temperature
   document.getElementById('wind-speed2').textContent = forecast.windSpeed
   document.getElementById('weather-icon2').src = forecast.icon
-
 }
 
 
+
+$(document).ready(function(){
+  $('.slick-slider').slick({
+  });
+});
